@@ -1,7 +1,7 @@
 {
   "name": "bugsnag-release-action",
   "version": "1.0.0",
-  "description": "",
+  "description": "Github action that will push a new release to bugsnag",
   "main": "dist/main.js",
   "scripts": {
     "build": "tsc"

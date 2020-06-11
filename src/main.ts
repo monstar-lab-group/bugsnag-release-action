@@ -14,7 +14,6 @@ try {
   const builderName = core.getInput('builderName') || process.env.GITHUB_ACTOR
   const autoAssignRelease = core.getInput('autoAssignRelease') || true
 
-
   console.log(`Reporting build for version ${version}`);
   reportBuild({
     apiKey: apiKey,
