@@ -1,0 +1,26 @@
+name: 'Bugsnag release action'
+description: 'Github action that will push a new release to bugsnag'
+author: 'Monstar Lab Group'
+inputs:
+  BUGSNAG_API_KEY:
+    description: 'Your bugsnag API Key'
+    required: true
+  releaseStage:
+    description: 'The release stage of the build. The default is `production`'
+    default: 'production'
+    required: false
+  builderName:
+    description: 'The name provisioning the build. The default is the name triggering the build.'
+    required: false
+  autoAssignRelease:
+    description: 'Flag indicating whether to automatically associate this build with any new error events and sessions that are received for the release stage. The default is `true`'
+    required: false
+  version:
+    description: 'The version to add to bugsnag. The default is the Git SHA.'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/main.js'
+branding:
+  color: 'blue'
+  icon: 'upload'

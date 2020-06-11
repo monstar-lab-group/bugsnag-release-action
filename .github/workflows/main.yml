@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  bugsnagReportBuild:
+    runs-on: ubuntu-latest
+    name: Bugsnag - Test
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: report
+      uses: ./
+      with:
+        releaseStage: staging
+      env:
+        BUGSNAG_API_KEY: ${{ secrets.BUGSNAG_API_KEY }}
