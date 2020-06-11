@@ -1,6 +1,6 @@
 name: 'Bugsnag release action'
 description: 'Github action that will push a new release to bugsnag'
-author: 'Monstar Lab Group'
+author: 'Jonas Schwartz'
 inputs:
   BUGSNAG_API_KEY:
     description: 'Your bugsnag API Key'
