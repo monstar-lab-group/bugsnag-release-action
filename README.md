@@ -1,12 +1,12 @@
+**Master** : ![.github/workflows/main.yml](https://github.com/monstar-lab-oss/bugsnag-release-action/workflows/.github/workflows/main.yml/badge.svg?branch=master)
+ 
 # Bugsnag Release Action
 
-Report a release to Bugsnag from GitHub Actions.
+## 📖 Project description
 
-## Prerequisites
+This action will automatically trigger a release on Bugsnag, to help you track bugs across different releases.
 
-* A bugsnag API Key
-
-## Usage
+## 🔧 Installation
 
 Add the following to your workflow:
 
@@ -19,24 +19,28 @@ Add the following to your workflow:
     BUGSNAG_API_KEY: ${{ secrets.BUGSNAG_API_KEY }}
 ```
 
-## Inputs
+### Inputs
 
-### `BUGSNAG_API_KEY`
+#### `BUGSNAG_API_KEY`
 
 **Required** Your bugsnag API Key
 
-### `releaseStage`
+#### `releaseStage`
 
 The release stage of the build. The default is `production`
 
-### `builderName`
+#### `builderName`
 
 The name provisioning the build. The default is the name triggering the build.
 
-### `autoAssignRelease`
+#### `autoAssignRelease`
 
 Flag indicating whether to automatically associate this build with any new error events and sessions that are received for the release stage. The default is `true`
 
-### `version`
+#### `version`
 
 The version to add to bugsnag. The default is the Git SHA.
+
+## 💻 Developers
+
+* Jonas Schwartz
