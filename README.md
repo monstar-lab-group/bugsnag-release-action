@@ -12,7 +12,7 @@ Add the following to your workflow:
 
 ```
 - name: Bugsnag report
-  uses: ./
+  uses: monstar-lab-oss/bugsnag-release-action@v1.0.0
   with:
     releaseStage: production
   env:
