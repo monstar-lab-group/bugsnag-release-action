@@ -12,7 +12,7 @@
   "dependencies": {
     "@actions/core": "^1.2.4",
     "@actions/github": "^3.0.0",
-    "bugsnag-build-reporter": "^1.0.2"
+    "bugsnag-build-reporter": "^2.0.0"
   },
   "devDependencies": {
     "typescript": "^3.6.3"
